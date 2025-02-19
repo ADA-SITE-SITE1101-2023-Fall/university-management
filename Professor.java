@@ -58,4 +58,20 @@ public class Professor extends Staff {
     public String toString() {
         return super.toString() + "\nCourses Taught: " + coursesTaught;
     }
+
+    public List<Student> getAssignedStudents() {
+        return assignedStudents;
+    }
+
+    public void setAssignedStudents(List<Student> assignedStudents) {
+        this.assignedStudents = assignedStudents;
+    }
+
+    public void setResearchPapers(List<String> researchPapers) {
+        this.researchPapers = researchPapers;
+    }
+
+    public void setCoursesTaught(List<String> coursesTaught) {
+        this.coursesTaught = coursesTaught;
+    }
 }
